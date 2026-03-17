@@ -1,9 +1,14 @@
 import React from 'react'
-
-function App() {
+import Card from './components/Card'
+ 
+const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Card />
+      <Card />
+      <Card />
+    </div>
   )
-}
+} 
 
-export default App
+export default App 
