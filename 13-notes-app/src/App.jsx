@@ -5,12 +5,12 @@ const App = () => {
   const [notes, setNotes] = useState('') 
   const [details, setDetails] = useState('')
 
-  const [tasks, setTasks] = useState({})
+  const [tasks, setTasks] = useState([])
 
   const handleSubmit = (e) => {
     e.preventDefault()
- 
-    const copyTasks = [...tasks];
+    
+    const copyTasks = [...tasks]
 
     copyTasks.push({notes,details})
     
@@ -56,9 +56,7 @@ const App = () => {
         <div>
            
           /*Creats cards and runs loop on them of the stored value array*/
-          {tasks.map(function(elem,idx){
-            return div
-          })}
+          
 
         </div>
       </div>
