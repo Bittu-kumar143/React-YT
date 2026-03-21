@@ -9,11 +9,15 @@ import NotFound from './pages/NotFound'
 import Men from './pages/Men'
 import Women from './pages/Women'
 import Courses from './pages/Courses'
+import CourseDetail from './pages/CourseDetail'
+import Navbar2 from './components/Navbar2'
 
 const App = () => {
   return (
     <div className='h-screen bg-black text-white'>
       <Navbar />
+      <Navbar2 />
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/About' element={<About />} />
@@ -22,6 +26,7 @@ const App = () => {
           <Route path='Women' element={<Women />} />
         </Route>
 
+         <Route path='/Courses/:CourseId' element={<CourseDetail />} />
   
         <Route path='/Courses' element={<Courses />} />
         <Route path='*' element={<NotFound />} />

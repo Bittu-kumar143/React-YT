@@ -6,6 +6,6 @@ const Men = () => {
         <h1>mens collection</h1>
     </div>
   )
-}
+ }
 
 export default Men
